@@ -2,7 +2,7 @@ let table = base.getTable("Offers");
 let query = await table.selectRecordsAsync({fields: ['Full Name']});
 let view = table.getView("Accepted");
 console.log(query.records);
-let acceptedFilter = await view.selectRecordAsync('viwZlrjPlw1XeVtb9');
+let acceptedFilter = await view.selectRecordAsync('base_id', {fields: ['Full Name']});
 console.log(acceptedFilter);
 
 

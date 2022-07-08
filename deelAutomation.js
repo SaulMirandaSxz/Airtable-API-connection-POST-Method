@@ -80,7 +80,7 @@ let response = await fetch('https://api-gateway-demo.deel.network/rest/v1/contra
 )),
     headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdGFnZSI6ImRldiIsInRpbWVzdGFtcCI6MTY1MzU2NDgwNzM0NCwiYWRtaW4iOnRydWUsImRlZWwiOiJtYXJjaW8uY2FydmFsaG9AZGVlbC5jb20iLCJpZCI6NDU1NTM5LCJleHAiOjE2NTM2NTEyMDd9.QPQ5xh36VVeBNmXYjy4l_2yEynuRMFKpMHQAKsnjXK0',
+        'Authorization': 'Bearer ' + 'API_KEY',
     },
 });
 console.log(await response.json());
@@ -101,7 +101,7 @@ let signContract = await fetch('https://api-gateway-demo.deel.network/rest/v1/co
 )),
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer ' + 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdGFnZSI6ImRldiIsInRpbWVzdGFtcCI6MTY1MzU2NDgwNzM0NCwiYWRtaW4iOnRydWUsImRlZWwiOiJtYXJjaW8uY2FydmFsaG9AZGVlbC5jb20iLCJpZCI6NDU1NTM5LCJleHAiOjE2NTM2NTEyMDd9.QPQ5xh36VVeBNmXYjy4l_2yEynuRMFKpMHQAKsnjXK0',
+      'Authorization': 'Bearer ' + 'API_KEY',
   },
 });
 console.log(await signContract.json());

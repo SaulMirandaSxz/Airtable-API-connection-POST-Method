@@ -35,16 +35,16 @@ function countByField(records, groupByField) {
 }
 
 output.markdown('## Categories');
-let categoryCounts = countByField(records, 'flds48o0GOkEJyynF');
+let categoryCounts = countByField(records, 'record_id');
 output.table(categoryCounts);
 
 output.markdown('## Projects');
 output.table(
     records.map(record => ({
-        Name: record.getCellValue('fldwJG7rdvfY3UeaS'),
-        Category: record.getCellValue('flds48o0GOkEJyynF'),
-        'Status': record.getCellValue('fld8096HEFYzNixHz'),
-        Client: record.getCellValue('fldM4gXExQK2ZBFai'),
+        Name: record.getCellValue('record_id'),
+        Category: record.getCellValue('record_id'),
+        'Status': record.getCellValue('record_id'),
+        Client: record.getCellValue('record_id'),
     })),
 );
 
